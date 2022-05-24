@@ -41,7 +41,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Minimum supported Python version by AllianceAuth
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -58,10 +57,3 @@ jobs:
           STACKMANAGER_VERSION: 9999
         run: |
           python -m build
-
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: dist
-          if-no-files-found: ignore
