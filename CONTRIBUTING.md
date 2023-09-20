@@ -9,15 +9,17 @@ This repository uses [pre-commit](https://github.com/pre-commit/pre-commit) to
 verify compliance with formatting rules. To use:
 
 1. Install `pre-commit`.
-2. From inside the `django-ckeditor-skins` root directory, run `pre-commit install`.
-3. You're all done! Code will be checked automatically using git hooks.
+1. From inside the `django-ckeditor-skins` root directory, run `pre-commit install`.
+1. You're all done! Code will be checked automatically using git hooks.
 
 You can check if your code to commit adheres to the given style by simply running:
+
 ```shell script
 pre-commit
 ```
 
 or to check all files:
+
 ```shell script
 pre-commit run --all-files
 ```
@@ -29,7 +31,6 @@ The following will be checked by `pre-commit`:
 - line ending is LF
 - code formatted according to black code style
 - code conforms with flake8
-
 
 ## Contributing via pull requests
 
