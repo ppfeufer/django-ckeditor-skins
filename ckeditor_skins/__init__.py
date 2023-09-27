@@ -2,7 +2,10 @@
 Initialise the app
 """
 
-default_app_config: str = "ckeditor_skins.apps.CkeditorSkinsConfig"
+# Standard Library
+from importlib import metadata
 
-__version__ = "0.0.2"
+__version__ = metadata.version("django-ckeditor-skins")
 __title__ = "Django CKeditor Skins"
+
+del metadata

@@ -1,6 +1,47 @@
 [build-system]
-build-backend = "setuptools.build_meta"
+build-backend = "hatchling.build"
 requires = [
-    "setuptools>=42",
-    "wheel",
+    "hatchling",
+]
+
+[project]
+name = "django-ckeditor-skins"
+version = "0.0.2"
+description = "Additinal Skins for the Django CKeditor"
+readme = "README.md"
+keywords = [
+    "ckeditor",
+]
+license = {file = "LICENSE"}
+authors = [
+    { name = "Peter Pfeufer", email = "develop@ppfeufer.de" },
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+dependencies = [
+    "django-ckeditor",
+]
+[project.urls]
+Changelog = "https://github.com/ppfeufer/django-ckeditor-skins/blob/master/CHANGELOG.md"
+"Issue / Bug Reports" = "https://github.com/ppfeufer/django-ckeditor-skins/issues"
+
+[tool.hatch.build]
+include = [
+    "/django_ckeditor_skins",
 ]
